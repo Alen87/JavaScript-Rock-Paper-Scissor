@@ -11,16 +11,20 @@ const scissors_div = document.getElementById("s");
 
 
 function getComputerChoice() {
- const choises = ['r','p','s'];
- console.log(Math.random() * 3);
+ const choices = ['r','p','s'];
+ const randomNumber=Math.floor(Math.random() * 3);
+ return choices[randomNumber];
 }
 
-getComputerChoice();
+
 
 function game(userChoice){
-  
-
+  const computerChoice = getComputerChoice();
+  console.log("user choice =>" + usherChoice);
+  console.log("computer choice =>" + computerChoice);
 }
+
+game("c");
 
 function main() {
 
